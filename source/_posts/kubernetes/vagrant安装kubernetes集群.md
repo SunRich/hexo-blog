@@ -6,25 +6,40 @@ tags:
   - kubernetes
 description: 容器时代，我们谈的最多的是如何利用docker将现有的单体应用架构转变成微服务架构，实施微服务，我们必须借助一个编排工具来管理dokcer。目前主流的docker编排工具有 Docker Swarm， Mesos 和 kubernetes。本文将介绍在centos7虚拟机下安装kubernetes集群。
 ---
+
+## 目录
+- [前言](#前言)
+- [环境说明](#环境说明)
+- [安装和配置](#安装和配置)
+- [验证](#验证)
+
 ## 前言
 容器时代，我们谈的最多的是如何利用docker将现有的单体应用架构转变成微服务架构，实施微服务，我们必须借助一个编排工具来管理dokcer。目前主流的docker编排工具有 Docker Swarm， Mesos 和 kubernetes。本文将介绍在centos7虚拟机下安装kubernetes集群。
-## 一. 环境说明
-#### 1. 虚拟机系统版本
+
+
+## 环境说明
+
+###  虚拟机系统版本
+
 三台虚拟机均为centos7
-#### 2. 需要安装的软件列表软件列表
 
-*  Kubernetes
-*  docker
-*  flanne
-*  etcd
+### 需要安装的软件列表
 
-#### 3 节点列表IP
-*  master节点 : 192.168.118.120
-*  node节点1  : 192.168.118.121
-*  node节点2  : 192.168.118.122
+-   Kubernetes
+-  docker
+-  flanne
+-  etcd
 
-## 二. 安装和配置
-### 1. 关闭每个节点的selinux
+###  节点列表IP
+
+-  master节点 : 192.168.118.120
+-  node节点1  : 192.168.118.121
+-  node节点2  : 192.168.118.122
+
+## 安装和配置
+
+###  关闭每个节点的selinux
+
 -  永久关闭， `cat /etc/selinux/config`
 ```
 # This file controls the state of SELinux on the system.
@@ -44,7 +59,8 @@ SELINUXTYPE=targeted
 setenforce 0
 ```
 
-### 2. 配置master节点
+###  配置master节点
+
 - 安装软件  
 ```
 sudo yum install -y docker kubernetes-master etcd
@@ -126,7 +142,8 @@ for service in etcd kube-apiserver kube-controller-manager kube-scheduler; do
 done
 ```
 
-### 3. 配置node节点
+### 配置node节点
+
 - 安装
 ```bash
 yum install -y docker kubernetes-node flannel
@@ -191,7 +208,8 @@ for SERVICES in kube-proxy kubelet docker flanneld; do
 done
 ```
 
-### 3. 验证
+## 验证
+
 - master几点查看flannel网络是否分配:`etcdctl ls /coreos.com/network/subnets`
 ```
 /coreos.com/network/subnets/10.1.95.0-24

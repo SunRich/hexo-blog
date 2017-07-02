@@ -9,10 +9,9 @@ description: 真正的强者，不是没有眼泪，而是含泪奔跑
 author: SunRich
 language: zh-Hans
 timezone:
-
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://www.sunrich.me/
+url: http://www.sunrich.me/
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -34,7 +33,7 @@ titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
@@ -80,11 +79,11 @@ suprise:
   assist: true
 
 # 打赏功能，需要将图片链接更换为自己的
-donate:
-  enable: true
-  text: 仅仅是一个功能
-  wechat: http://o7keinrz4.bkt.clouddn.com/wechat.jpg
-  alipay: http://o7keinrz4.bkt.clouddn.com/alipay.jpg
+#donate:
+#  enable: true
+#  text: 仅仅是一个功能
+#  wechat: http://o7keinrz4.bkt.clouddn.com/wechat.jpg
+#  alipay: http://o7keinrz4.bkt.clouddn.com/alipay.jpg
 
 # 不蒜子统计
 busuanzi: false
