@@ -7,7 +7,7 @@ title: SunRich
 subtitle: SunRich
 description: 真正的强者，不是没有眼泪，而是含泪奔跑
 author: SunRich
-language: zh-CN
+language: zh-Hans
 timezone:
 
 # URL
@@ -63,11 +63,86 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: maupassant
 
+theme: magiclamp
+#your-gentie-product-key
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
   repo: git@github.com:SunRich/SunRich.github.io.git
   branch: master
+# Some suprise plugs
+suprise:
+  # 踢皮球动画开关
+  ball: true
+  # 主题点亮开关
+  assist: true
+
+# 打赏功能，需要将图片链接更换为自己的
+donate:
+  enable: true
+  text: 仅仅是一个功能
+  wechat: http://o7keinrz4.bkt.clouddn.com/wechat.jpg
+  alipay: http://o7keinrz4.bkt.clouddn.com/alipay.jpg
+
+# 不蒜子统计
+busuanzi: false
+
+# share server
+# JiaThis share
+jiathis: false
+
+# baidu share
+baidu_share: true
+
+# DISQUS 帐号 （如果已经设置 多说 帐号，此选项将被跳过）
+disqus_shortname: xxx # your-disqus-shortname
+
+
+# 社交链接，将在侧栏中显示
+social:
+  GitHub: http://github.com/SunRich
+  Twitter: https://twitter.com/xxx
+  Weibo: http://weibo.com/xxx
+  # DouBan: your-douban-url
+  ZhiHu: http://www.zhihu.com/people/xxx
+  # 等等
+
+# 友情链接
+links_title: Links
+links:
+  About: http://blog.idhyt.com/about/
+
+# Creative Commons 4.0 International License.
+# http://creativecommons.org/
+# Available: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero
+creative_commons: by-nc-sa
+
+
+# Google 站长工具验证，请选择 `HTML Meta` 验证方式
+# See: https://www.google.com/webmasters/
+google_site_verification: xxx
+
+
+# Google 分析 ID
+google_analytics: xxx
+
+
+# 百度统计 ID，此 ID 是百度统计提供脚本中 hm.js? 后面那串字符，非百度统计帐号
+baidu_analytics: xxx
+
+# swiftype search
+swiftype_key: xxx
+
+# 站点起始时间
+since: 2011
+
+sitemap:
+ path: sitemap.xml
+baidusitemap:
+ path: baidusitemap.xml
+
+# =============================================================================
+# End Mala Theme configuration
+# =============================================================================

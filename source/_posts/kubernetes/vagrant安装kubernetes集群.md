@@ -4,10 +4,10 @@ date: 2017-06-16 13:39:00
 tags:
   - docker
   - kubernetes
+description: 容器时代，我们谈的最多的是如何利用docker将现有的单体应用架构转变成微服务架构，实施微服务，我们必须借助一个编排工具来管理dokcer。目前主流的docker编排工具有 Docker Swarm， Mesos 和 kubernetes。本文将介绍在centos7虚拟机下安装kubernetes集群。
 ---
-# vagrant安装kubernetes集群
 ## 前言
-容器时代，我们谈的最多的是如何利用docker将现有的单体应用架构转变成微服务架构，实施微服务，我们必须借助一个编排工具来管理dokcer。目前主流的docker编排工具有 Docker Swarm， Mesos 和 kubernetes。Kubernetes是Google开源的容器集群管理系统，其提供应用部署、维护、扩展机制等功能，利用Kubernetes能方便地管理跨机器运行容器化的应用。Kubernetes可以在物理机或虚拟机上运行，且支持部署到AWS,Azure,GCE等多种公有云环境。本文将介绍在centos7虚拟机下安装kubernetes集群。
+容器时代，我们谈的最多的是如何利用docker将现有的单体应用架构转变成微服务架构，实施微服务，我们必须借助一个编排工具来管理dokcer。目前主流的docker编排工具有 Docker Swarm， Mesos 和 kubernetes。本文将介绍在centos7虚拟机下安装kubernetes集群。
 ## 一. 环境说明
 #### 1. 虚拟机系统版本
 三台虚拟机均为centos7
