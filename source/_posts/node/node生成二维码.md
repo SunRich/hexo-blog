@@ -98,7 +98,7 @@ app.listen(8080, function () {
     2. size(int):二维码大小
   - 请求示例: `get $host/?url=http://www.kaoyaya.com&size=200`
   - 响应:  
-  ![qrimge](./node生成二维码/qr.png)
+  ![qrimge](node生成二维码/qr.png)
 ### 获取带logo二维码
   - 请求 `get $host/logo?url=&size=`
   - 参数
@@ -106,4 +106,4 @@ app.listen(8080, function () {
     2. size(int):二维码大小
   - 请求示例: `get $host/logo?url=http://www.kaoyaya.com&size=200`
   - 响应:  
-  ![qrimge](./node生成二维码/qrlogo.png)
+  ![qrimge](node生成二维码/qrlogo.png)
